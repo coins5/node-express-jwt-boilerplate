@@ -4,4 +4,5 @@ GETTING STARTED
 
 
 1. git clone ...
-2. node server
+2. npm install
+3. node server
