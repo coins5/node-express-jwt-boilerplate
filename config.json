@@ -1,0 +1,10 @@
+{
+	"secret"			: "THIS_IS_SECRET.CHANGE FOR YOU'R OWN PARAPHRASE",
+	"conn_MySQL"	: {
+		"host"			: "127.0.0.1",
+		"port"			: "3306", 
+		"user"			: "root",
+		"password"		: "",
+		"database"		: "myAwesomeDb"
+	}
+}
