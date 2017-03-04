@@ -1,0 +1,1 @@
+{"code":"ER_ACCESS_DENIED_ERROR","errno":1045,"sqlState":"28000","fatal":true}{"code":"ER_SP_DOES_NOT_EXIST","errno":1305,"sqlState":"42000","index":0}

@@ -9,9 +9,8 @@ var express = require('express'),
     _       = require('underscore'),
 
     // Define api
-    Notifications   = require("./appRoutes/Notifications"),
-    EmailCouriers   = require("./appRoutes/EmailCouriers"),
-    Companies       = require("./appRoutes/Companies");
+    Negocio     = require("./appRoutes/Negocio"),
+    Usuario     = require("./appRoutes/Usuario");
 var app = module.exports = express.Router();
 
 // Using the token's key
@@ -27,7 +26,17 @@ app.get('/api/protected/random-quote', function(req, res) {
 	console.log(req.user);
 	res.status(200).send(quoter.getRandomOne());
 });
-
+/*
 app.get('/api/protected/getNotifications',			Notifications.getNotifications);
 app.get('/api/protected/getEmailCouriers',			EmailCouriers.getEmailCouriers);
 app.get('/api/protected/getAllCompanies',			Companies.getAllCompanies);
+*/
+
+app.get('/api/protected/getNegocio',                Negocio.getNegocio);
+
+
+// Not protected, erase on production
+app.get('/api/getAllUsuario',                       Usuario.getAllUsuario);
+app.post('/api/createUsuario',                      Usuario.createUsuario);
+app.get('/api/getData',                             Usuario.getData);
+app.get('/api/getUltimosPedidos',                   Usuario.getUltimosPedidos);
